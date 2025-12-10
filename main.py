@@ -16,7 +16,7 @@ def hello():
     return JSONResponse(content=json_data)
 
 @app.get("/about") #http://127.0.0.1:8000/about
-#about some shit
+#about some shitt
 def about():
     return {"message": "О сайте"}
 
