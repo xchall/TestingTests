@@ -13,6 +13,9 @@ class AppTests(unittest.TestCase):
 	def test_post_hello_endpoint(self):
 		r = requests.get(url+'/hello')
 		self.assertEqual(r.status_code, 200)
+	
+	def test_stop_server(self):
+		r = requests.get(url+'/stop')
 		
 if __name__ == '__main__':
     unittest.main()
